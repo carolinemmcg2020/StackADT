@@ -15,7 +15,6 @@ public class ArrayListStack<E> implements StackADT<E>
      * The constructor creates an ArrayList object and stores it to the data field.
      */
     public ArrayListStack(){
-
         stack = new ArrayList<E>();
     }
 
@@ -31,15 +30,13 @@ public class ArrayListStack<E> implements StackADT<E>
      * Looks at the object at the top of the stack without removing it from the stack.
      */
     public E top(){
-        //Complete method body...
-        return this.stack.get(this.stack.size() - 1);
+       return this.stack.get(this.stack.size() - 1);
     }
 
     /**
      * Returns the size of the stack, i.e. no of elements currently in the stack.
      */
     public int size(){
-        //Complete method body...
         return this.stack.size();
     }
 
@@ -47,7 +44,6 @@ public class ArrayListStack<E> implements StackADT<E>
      * Tests if the stack is empty.
      */
     public boolean isEmpty(){
-        //Complete method body...
         if(this.stack.size() == 0) {
             return true;
         }else {
@@ -59,9 +55,7 @@ public class ArrayListStack<E> implements StackADT<E>
      * Pushes/adds an item onto the top of the stack.
      */
     public void push(E element){
-        //Complete method body...
-            this.stack.add(element);
-
+        this.stack.add(element);
     }
 
 }
