@@ -10,7 +10,6 @@ public class Main {
         arrayList.push("String");
         System.out.println(arrayList.size());
         arrayList.push("String2");
-        arrayList.push("String3");
 
         System.out.println(arrayList.top());
         arrayList.pop();
